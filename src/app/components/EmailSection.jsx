@@ -13,7 +13,6 @@ const EmailSection = () => {
     const data = {
       name: e.target.name.value,
       email: e.target.email.value,
-      subject: e.target.subject.value,
       message: e.target.message.value,
     };
     const JSONdata = JSON.stringify(data);
@@ -79,56 +78,39 @@ const EmailSection = () => {
             className="flex flex-col p-8 rounded-xl "
             onSubmit={handleSubmit}
           >
-            <div className="flex gap-4 mb-4">
-              <div className="flex-1">
-                <label
-                  htmlFor="name"
-                  className="text-purple-900 block mb-1 text-sm font-semibold"
-                >
-                  Name
-                </label>
-                <input
-                  name="name"
-                  type="text"
-                  id="name"
-                  required
-                  className="w-full px-4 py-2.5 border border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
-                  placeholder="Your name"
-                />
-              </div>
-              <div className="flex-1">
-                <label
-                  htmlFor="email"
-                  className="text-purple-900 block mb-1 text-sm font-semibold"
-                >
-                  Email Address
-                </label>
-                <input
-                  name="email"
-                  type="email"
-                  id="email"
-                  required
-                  className="w-full px-4 py-2.5 border border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
-                  placeholder="your.email@example.com"
-                />
-              </div>
-            </div>
-            <div className="mb-4">
+            <div className="mb-6">
               <label
-                htmlFor="subject"
+                htmlFor="name"
                 className="text-purple-900 block mb-1 text-sm font-semibold"
               >
-                Subject
+                Name
               </label>
               <input
-                name="subject"
+                name="name"
                 type="text"
-                id="subject"
+                id="name"
                 required
                 className="w-full px-4 py-2.5 border border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
-                placeholder="Project Inquiry"
+                placeholder="Your name"
               />
             </div>
+            <div className="mb-6">
+              <label
+                htmlFor="email"
+                className="text-purple-900 block mb-1 text-sm font-semibold"
+              >
+                Email Address
+              </label>
+              <input
+                name="email"
+                type="email"
+                id="email"
+                required
+                className="w-full px-4 py-2.5 border border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+                placeholder="your.email@example.com"
+              />
+            </div>
+
             <div className="mb-6">
               <label
                 htmlFor="message"
