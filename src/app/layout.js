@@ -7,6 +7,9 @@ export const metadata = {
   title: "Saad Ali",
   description:
     "Frontend Developer with years of experience specializing in React.js, Next.js, Redux, and modern UI frameworks. ",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
