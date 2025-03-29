@@ -40,8 +40,8 @@ const EmailSection = () => {
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-8 relative bg-purple-50"
     >
-      {/* <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-200 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-1/2 -left-4 transform -translate-x-1/2 -translate-y-1/2"></div> */}
-      <div className="z-10 px-6">
+      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-200 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-1/2 left-1/3 transform -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="px-6">
         <h5 className="text-3xl font-bold text-purple-900 mb-4">
           Let's Collaborate
         </h5>
@@ -65,7 +65,7 @@ const EmailSection = () => {
           </Link>
         </div>
       </div>
-      <div className="z-10 px-6">
+      <div className="px-6">
         {emailSubmitted ? (
           <div className="text-center p-6 rounded-lg bg-white shadow-lg">
             <p className="text-purple-800 text-lg font-semibold">
