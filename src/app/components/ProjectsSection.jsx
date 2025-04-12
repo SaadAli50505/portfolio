@@ -190,6 +190,71 @@ const ProjectsSection = () => {
           </div>
         </div>
       </div>
+
+      <div className="grid md:grid-cols-2 gap-8 items-center mt-[70px] lg:mt-[120px]">
+        <div className="flex flex-col gap-4 font-roboto">
+          <div className="text-2xl font-bold text-white bg-[#e343ff] inline-flex items-center px-4 py-1 rounded-full shadow-md w-fit">
+            Rachna Inventory and Purchase System
+          </div>
+          <ul className="text-lg lg:text-xl text-gray-600 list-disc pl-5">
+            <li>
+              Built an inventory management system from scratch for a college,
+              enabling them to manage their inventory, check and balance using
+              React, Node.js, Express, MongoDB, and REST API.
+            </li>
+            <li>
+              Designed and implemented a user-friendly interface, ensuring
+              seamless navigation and efficient inventory management for the
+              college staff.
+            </li>
+            <li>
+              Utilized REST API for data fetching and updating, improving
+              application performance and user experience.
+            </li>
+            <li>
+              Ensured the creation of reusable components and followed best
+              folder structures, enhancing code organization and
+              maintainability.
+            </li>
+            <li>
+              Integrated Jest and React Testing Library to write comprehensive
+              test cases, ensuring the reliability and stability of the
+              application.
+            </li>
+            <li>
+              Collaborated with the college staff to ensure seamless integration
+              and user training, optimizing the workflow for inventory
+              management.
+            </li>
+          </ul>
+          <div className="flex flex-wrap gap-2">
+            <span className="bg-slate-200 px-3 py-1 rounded-full text-sm">
+              React
+            </span>
+            <span className="bg-slate-200 px-3 py-1 rounded-full text-sm">
+              Node.js
+            </span>
+            <span className="bg-slate-200 px-3 py-1 rounded-full text-sm">
+              Express
+            </span>
+            <span className="bg-slate-200 px-3 py-1 rounded-full text-sm">
+              MongoDB
+            </span>
+            <span className="bg-slate-200 px-3 py-1 rounded-full text-sm">
+              REST API
+            </span>
+          </div>
+        </div>
+        <div className="relative group flex justify-end">
+          <div className="h-100 md:h-120 overflow-hidden rounded-lg w-full">
+            <img
+              src="/images/projects/rachna.png"
+              alt="Rachna Inventory and Purchase System"
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

@@ -244,7 +244,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-black mb-4 text-3xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
+          <h1 className="text-black mb-4 text-3xl sm:text-5xl lg:text-5xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               Hello, I&apos;m{" "}
             </span>
@@ -256,14 +256,14 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#000000] text-base sm:text-lg mb-6 lg:text-xl">
+          <p className="text-[#000000] text-base sm:text-lg mb-6 lg:text-1xl">
             Frontend Developer with years of experience specializing in
             React.js, Next.js, Redux, and modern UI frameworks.
           </p>
           <div>
             <Link
               href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+              className="px-5 inline-block py-2 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
               Hire Me
             </Link>
@@ -272,7 +272,7 @@ const HeroSection = () => {
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
               onClick={handleDownloadCV}
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-4 py-1">
                 Download CV
               </span>
             </Link>
@@ -288,7 +288,7 @@ const HeroSection = () => {
             className="flex justify-center items-center p-4 border-8 border-gradient-to-br from-[#c181f8] to-[#da2979] rounded-full 
 border-indigo-500/50"
           >
-            <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative overflow-hidden">
+            <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] relative overflow-hidden">
               <Image
                 src="/images/profile.jpg"
                 alt="hero image"
