@@ -1,8 +1,15 @@
-import nodemailer from "nodemailer";
+const nodemailer = require("nodemailer");
 
-export async function POST(req) {
+exports.handler = async function (event, context) {
+  if (event.httpMethod !== "POST") {
+    return {
+      statusCode: 405,
+      body: JSON.stringify({ message: "Method Not Allowed" }),
+    };
+  }
+
   try {
-    const { name, email, message } = await req.json();
+    const { name, email, message } = JSON.parse(event.body);
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -22,12 +29,15 @@ export async function POST(req) {
              <p><strong>Message:</strong> ${message}</p>`,
     });
 
-    return Response.json(
-      { message: "Email sent successfully!" },
-      { status: 200 }
-    );
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: "Email sent successfully!" }),
+    };
   } catch (error) {
     console.error(error);
-    return Response.json({ message: "Email sending failed." }, { status: 500 });
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ message: "Email sending failed." }),
+    };
   }
-}
+};
