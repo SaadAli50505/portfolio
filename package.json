@@ -4,13 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
-    "@netlify/next": "^1.4.9",
     "@netlify/plugin-nextjs": "^5.10.5",
     "autoprefixer": "10.4.15",
     "devicon-react-svg": "^0.2.4",
