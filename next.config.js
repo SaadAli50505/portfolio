@@ -1,10 +1,9 @@
 // next.config.js
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Don't set output: 'export'
+  reactStrictMode: true,
   images: {
-    unoptimized: true,
+    unoptimized: true, // if you're using next/image and Netlify
   },
 };
 
