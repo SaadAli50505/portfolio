@@ -43,11 +43,11 @@ const EmailSection = () => {
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-200 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-1/2 left-1/3 transform -translate-x-1/2 -translate-y-1/2"></div>
       <div className="px-6">
         <h5 className="text-3xl font-bold text-purple-900 mb-4">
-          Let's Collaborate
+          Let&apos;s Collaborate
         </h5>
         <p className="text-purple-800 mb-6 max-w-md text-lg leading-relaxed">
-          I'm actively seeking new challenges and partnerships. Reach out to
-          discuss projects, opportunities, or simply to connect. I prioritize
+          I&apos;m actively seeking new challenges and partnerships. Reach out
+          to discuss projects, opportunities, or simply to connect. I prioritize
           prompt and meaningful communication.
         </p>
         <div className="socials flex flex-row gap-4">
@@ -71,7 +71,9 @@ const EmailSection = () => {
             <p className="text-purple-800 text-lg font-semibold">
               Message successfully sent!
             </p>
-            <p className="text-purple-600 mt-2">I'll respond within 24 hours</p>
+            <p className="text-purple-600 mt-2">
+              I&apos;ll respond within 24 hours
+            </p>
           </div>
         ) : (
           <form

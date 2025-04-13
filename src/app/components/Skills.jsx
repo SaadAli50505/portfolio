@@ -41,45 +41,45 @@ import {
 
 const Skills = () => {
   const row1Icons = [
-    <SiHtml5 />,
-    <SiCss3 />,
-    <DiJavascript1 />,
-    <SiTypescript />,
-    <DiReact />,
-    <SiNextdotjs />,
-    <DiJqueryLogo />,
-    <SiRedux />,
-    <SiAntdesign />,
-    <SiBootstrap />,
-    <SiTailwindcss />,
+    <SiHtml5 key="html5" />,
+    <SiCss3 key="css3" />,
+    <DiJavascript1 key="javascript" />,
+    <SiTypescript key="typescript" />,
+    <DiReact key="react" />,
+    <SiNextdotjs key="nextjs" />,
+    <DiJqueryLogo key="jquery" />,
+    <SiRedux key="redux" />,
+    <SiAntdesign key="antdesign" />,
+    <SiBootstrap key="bootstrap" />,
+    <SiTailwindcss key="tailwindcss" />,
   ];
 
   const row2Icons = [
-    <SiGraphql />,
-    <SiAxios />,
-    <SiReactquery />,
-    <SiFormik />,
-    <SiChartdotjs />,
-    <SiJest />,
-    <SiPostman />,
-    <DiGit />,
-    <SiWebpack />,
-    <SiBabel />,
-    <SiEslint />,
+    <SiGraphql key="graphql" />,
+    <SiAxios key="axios" />,
+    <SiReactquery key="reactquery" />,
+    <SiFormik key="formik" />,
+    <SiChartdotjs key="chartjs" />,
+    <SiJest key="jest" />,
+    <SiPostman key="postman" />,
+    <DiGit key="git" />,
+    <SiWebpack key="webpack" />,
+    <SiBabel key="babel" />,
+    <SiEslint key="eslint" />,
   ];
 
   const row3Icons = [
-    <SiNetlify />,
-    <SiVercel />,
-    <SiCloudinary />,
-    <SiSlack />,
-    <SiFigma />,
-    <DiSass />,
-    <DiLess />,
-    <DiNpm />,
-    <SiYarn />,
-    <SiFirebase />,
-    <SiStripe />,
+    <SiNetlify key="netlify" />,
+    <SiVercel key="vercel" />,
+    <SiCloudinary key="cloudinary" />,
+    <SiSlack key="slack" />,
+    <SiFigma key="figma" />,
+    <DiSass key="sass" />,
+    <DiLess key="less" />,
+    <DiNpm key="npm" />,
+    <SiYarn key="yarn" />,
+    <SiFirebase key="firebase" />,
+    <SiStripe key="stripe" />,
   ];
 
   return (
@@ -104,7 +104,7 @@ const Skills = () => {
             {row1Icons.map((icon, index) => (
               <div
                 key={`row1-${index}`}
-                className="text-4xl mx-24  transition-transform"
+                className="text-4xl mx-24 transition-transform"
               >
                 {icon}
               </div>
@@ -125,7 +125,7 @@ const Skills = () => {
             {row2Icons.map((icon, index) => (
               <div
                 key={`row2-${index}`}
-                className="text-4xl mx-24  transition-transform duration-200"
+                className="text-4xl mx-24 transition-transform duration-200"
               >
                 {icon}
               </div>
@@ -146,7 +146,7 @@ const Skills = () => {
             {row3Icons.map((icon, index) => (
               <div
                 key={`row3-${index}`}
-                className="text-4xl mx-24  transition-transform duration-200"
+                className="text-4xl mx-24 transition-transform duration-200"
               >
                 {icon}
               </div>
